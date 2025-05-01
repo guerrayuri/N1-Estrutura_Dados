@@ -3,5 +3,5 @@
 int main() {
     inicializarSistema();
     menu();
-    return 0;
+    return 0;
 }
