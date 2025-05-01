@@ -6,7 +6,6 @@
 #define MAX_TICKETS 100
 #define MAX_FILMES 5
 
-
 typedef struct {
     int numero;
     char cliente[50];
@@ -14,6 +13,7 @@ typedef struct {
     int linha;
     int coluna;
     char tipoIngresso[10];
+    int idFilme;
 } Bilhete;
 
 typedef struct {
@@ -21,13 +21,12 @@ typedef struct {
     int anoLancamento;
 } Filme;
 
-
 void inicializarSistema();
-void exibirSala();
+void exibirSala(int filmeIndex);
 void listarFilmes();
 void reservarLugar();
 void imprimirBilhete(int numero);
 void listarBilhetes();
 void menu();
 
-#endif 
+#endif // CINEMA_H
